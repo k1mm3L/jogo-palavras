@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.jogo {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#palavra {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin: 30px 0;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+input {
+    width: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 16px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+}
+
+#mensagem {
+    font-weight: bold;
+    min-height: 24px;
+}
+
+#tentativas {
+    font-weight: bold;
+    color: #dc2626;
+}
+
+#letras-usadas {
+    color: #555;
+    font-weight: bold;
+}
+
+#btn-reiniciar {
+    background-color: #16a34a;
+}
+
+#btn-reiniciar:hover {
+    background-color: #15803d;
+}
+
+@media (max-width: 480px) {
+    .jogo {
+        padding: 20px;
+    }
+
+    #palavra {
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+}
